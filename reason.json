@@ -38,7 +38,7 @@
         },
         {
           "match": "\\b([[:alpha:]][[:word:]]*)\\b",
-          "name": "entity.other.attribute-name.css constant.language constant.numeric"
+          "name": "entity.other.attribute-name.css constant.language"
         }
       ]
     },
@@ -257,7 +257,7 @@
           "begin": "([\\(])",
           "end": "([\\)])",
           "captures": {
-            "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+            "1": { "name": "entity.other.attribute-name.css constant.language" }
           },
           "patterns": [
             { "include": "#module-path-extended" }
@@ -352,7 +352,7 @@
           "begin": "(?:\\G|^)[[:space:]]*\\b(type)\\b",
           "end": "(?==)",
           "beginCaptures": {
-            "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+            "1": { "name": "entity.other.attribute-name.css constant.language" }
           },
           "patterns": [
             { "include": "#module-item-type-bind-name-tyvars" }
@@ -415,7 +415,7 @@
                 {
                   "match": "(?:(%)(.*?)|(caml.*?))(?=\"|(?:[^\\\\\\n]$))",
                   "captures": {
-                    "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" },
+                    "1": { "name": "entity.other.attribute-name.css constant.language" },
                     "2": { "name": "variable.other.class.js variable.interpolation keyword.operator keyword.control message.error" },
                     "3": { "name": "variable.other.class.js variable.interpolation keyword.operator keyword.control message.error"}
                   }
@@ -677,7 +677,7 @@
           "begin": "\\b(type)\\b",
           "end": "([\\.])",
           "beginCaptures": {
-            "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+            "1": { "name": "entity.other.attribute-name.css constant.language" }
           },
           "endCaptures": {
             "1": { "name": "entity.name.function" }
@@ -754,7 +754,7 @@
           "begin": "\\b(type)\\b",
           "end": "(?=\\))",
           "beginCaptures": {
-            "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+            "1": { "name": "entity.other.attribute-name.css constant.language" }
           },
           "patterns": [
             { "include": "#pattern-variable" }
@@ -802,7 +802,7 @@
           "begin": "(?:\\G|^)[[:space:]]*\\b(type)\\b",
           "end": "(?==)",
           "beginCaptures": {
-            "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+            "1": { "name": "entity.other.attribute-name.css constant.language" }
           },
           "patterns": [
             { "include": "#comment" },
@@ -863,7 +863,7 @@
       "end": "(?=[;\\)}]|\\b(class|exception|external|include|inherit|let|method|nonrec|open|private|type|val|with)\\b)",
       "beginCaptures": {
         "1": { "name": "keyword.other" },
-        "2": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+        "2": { "name": "entity.other.attribute-name.css constant.language" }
       },
       "patterns": [
         { "include": "#module-item-type-bind-name-tyvars-body" }
@@ -900,7 +900,7 @@
           "comment": "FIXME: specialized version of variant rule that also scans for (",
           "match": "\\b([[:upper:]][[:word:]]*)\\b(?![[:space:]]*[\\.\\(])",
           "captures": {
-            "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+            "1": { "name": "entity.other.attribute-name.css constant.language" }
           }
         },
         {
@@ -1113,10 +1113,10 @@
       "begin": "(\\[\\|?)(?![@%])",
       "end": "(\\|?\\])",
       "beginCaptures": {
-        "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+        "1": { "name": "entity.other.attribute-name.css constant.language" }
       },
       "endCaptures": {
-        "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+        "1": { "name": "entity.other.attribute-name.css constant.language" }
       },
       "patterns": [
         { "include": "#value-expression-literal-list-or-array-separator" },
@@ -1277,7 +1277,7 @@
           "end": "(?=[;\\)}]|\\b(and|class|constraint|exception|external|include|inherit|let|method|module|nonrec|open|private|rec|type|val|with)\\b)",
           "beginCaptures": {
             "1": { "name": "markup.inserted keyword.other variable.other.readwrite.instance" },
-            "2": { "name": "entity.other.attribute-name.css constant.language constant.numeric" },
+            "2": { "name": "entity.other.attribute-name.css constant.language" },
             "3": { "name": "markup.inserted keyword.other variable.other.readwrite.instance" }
           },
           "patterns": [
@@ -1310,7 +1310,7 @@
               "begin": "\\b(type)\\b",
               "end": "(?=[;\\)}]|\\b(class|constraint|exception|external|include|inherit|let|method|nonrec|open|private|val|with)\\b)",
               "beginCaptures": {
-                "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+                "1": { "name": "entity.other.attribute-name.css constant.language" }
               },
               "patterns": [
                 { "include": "#module-item-type-and" },
@@ -1498,7 +1498,7 @@
           "begin": "(\\.\\.)",
           "end": "(?=>)",
           "beginCaptures": {
-            "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+            "1": { "name": "entity.other.attribute-name.css constant.language" }
           }
         },
         {
@@ -1731,14 +1731,14 @@
     "value-expression-constructor": {
       "match": "\\b([[:upper:]][[:word:]]*)\\b(?![[:space:]]*[\\.])",
       "captures": {
-        "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+        "1": { "name": "entity.other.attribute-name.css constant.language" }
       }
     },
     "value-expression-constructor-polymorphic": {
       "match": "(`)([[:alpha:]][[:word:]]*)\\b(?!\\.)",
       "captures": {
         "1": { "name": "constant.other.symbol keyword.control.less variable.parameter" },
-        "2": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+        "2": { "name": "entity.other.attribute-name.css constant.language" }
       }
     },
     "value-expression-for": {
@@ -1880,7 +1880,7 @@
     },
     "value-expression-literal-boolean": {
       "match": "\\b(false|true)\\b",
-      "name": "entity.other.attribute-name.css constant.language constant.numeric"
+      "name": "entity.other.attribute-name.css constant.language"
     },
     "value-expression-literal-character": {
       "match": "(')([[:space:]]|[[:graph:]]|\\\\[\\\\\"'ntbr]|\\\\[[:digit:]][[:digit:]][[:digit:]]|\\\\x[[:xdigit:]][[:xdigit:]]|\\\\o[0-3][0-7][0-7])(')",
@@ -1960,7 +1960,7 @@
           "end": "(?<=\")|(\\|)([_[:lower:]]*)?(})|(?=[^[:space:]\"{])",
           "endCaptures": {
             "1": { "name": "keyword.control.flow message.error" },
-            "2": { "name": "entity.other.attribute-name.css constant.language constant.numeric" },
+            "2": { "name": "entity.other.attribute-name.css constant.language" },
             "3": { "name": "keyword.control.flow message.error" }
           },
           "patterns": [
@@ -1970,7 +1970,7 @@
               "comment": "meta.separator",
               "beginCaptures": {
                 "1": { "name": "keyword.control.flow message.error" },
-                "2": { "name": "entity.other.attribute-name.css constant.language constant.numeric" },
+                "2": { "name": "entity.other.attribute-name.css constant.language" },
                 "3": { "name": "keyword.control.flow message.error" }
               },
               "patterns": [
@@ -1993,12 +1993,12 @@
           "name": "string.double string.regexp",
           "beginCaptures": {
             "1": { "name": "keyword.control.flow message.error" },
-            "2": { "name": "entity.other.attribute-name.css constant.language constant.numeric" },
+            "2": { "name": "entity.other.attribute-name.css constant.language" },
             "3": { "name": "keyword.control.flow message.error" }
           },
           "endCaptures": {
             "1": { "name": "keyword.control.flow message.error" },
-            "2": { "name": "entity.other.attribute-name.css constant.language constant.numeric" },
+            "2": { "name": "entity.other.attribute-name.css constant.language" },
             "3": { "name": "keyword.control.flow message.error" }
           }
         },
@@ -2023,14 +2023,14 @@
           "match": "(@)([ \\[\\],.]|\\\\n)",
           "captures": {
             "1": { "name": "keyword.control.less" },
-            "2": { "name": "entity.other.attribute-name.css constant.language constant.numeric" }
+            "2": { "name": "entity.other.attribute-name.css constant.language" }
           }
         },
         {
           "comment": "FIXME: don't highlight in external strings",
           "match": "(%)([ads])?",
           "captures": {
-            "1": { "name": "entity.other.attribute-name.css constant.language constant.numeric" },
+            "1": { "name": "entity.other.attribute-name.css constant.language" },
             "2": { "name": "variable.other.readwrite.instance string.other.link variable.language" }
           }
         }
