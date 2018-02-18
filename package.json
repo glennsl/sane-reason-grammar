@@ -14,6 +14,7 @@
     "grammar",
     "language"
   ],
+  "icon": "assets/icon.png",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
