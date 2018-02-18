@@ -1466,7 +1466,7 @@
       "match": "(_)(?![[:alnum:]])|\\b([_[:lower:]][[:word:]]*)\\b(?!\\.[[:upper:]])",
       "captures": {
         "1": { "name": "comment" },
-        "2": { "name": "support.type string.regexp" }
+        "2": { "name": "support.type" }
       }
     },
     "type-expression-label": {
