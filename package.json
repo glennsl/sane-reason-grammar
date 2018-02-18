@@ -1,0 +1,38 @@
+{
+	"name": "sane-reason-grammar",
+	"displayName": "Sane ReasonML Grammar",
+	"version": "0.1.0",
+	"publisher": "glennsl",
+	"description": "Provides a coherent ReasonML grammar",
+	"author": "glennsl",
+	"categories": [
+    "Languages"
+  ],
+  "keywords": [
+    "reason",
+    "reasonml",
+    "grammar",
+    "language"
+  ],
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/glennsl/sane-reason-grammar.git"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"scripts": {
+	},
+	"devDependencies": {
+  },
+  "contributes": {
+    "grammars": [
+      {
+        "language": "reason",
+        "scopeName": "source.reason",
+        "path": "./reason.json"
+      }
+    ]
+  }
+}
