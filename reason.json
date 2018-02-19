@@ -164,7 +164,7 @@
           "end": "(?<![=])(?=[/>[:lower:]])",
           "comment": "meta.separator",
           "beginCaptures": {
-            "1": { "name": "markup.inserted constant.language support.property-value entity.name.filename" },
+            "1": { "name": "entity.other.attribute-name" },
             "2": { "name": "keyword.control.less" }
           },
           "patterns": [
@@ -175,7 +175,7 @@
           "match": "(\\b([[:lower:]][[:word:]]*)\\b[[:space:]]*+)",
           "captures": {
             "1": { "comment": "meta.separator" },
-            "2": { "name": "markup.inserted constant.language support.property-value entity.name.filename" }
+            "2": { "name": "entity.other.attribute-name" }
           }
         }
       ]
